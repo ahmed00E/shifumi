@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <title>Shifumi</title>
+  </head>
+  <body>
+    <div class="vertical-wrapper">
+      <header>
+        <div class="container">
+          <div class="score-container">
+            <div>
+              <p>You</p>
+              <h2 id="player-score">0</h2>
+            </div>
+            <div class="round-counter">
+              <p id="round-number">Round 0</p>
+            </div>
+            <div class="computer-score">
+              <p>Computer</p>
+              <h2 id="computer-score">0</h2>
+            </div>
+          </div>
+        </div>
+      </header>
+  
+      <div class="container">
+        <div class="match-container">
+          <section class="player">
+            <img id="player-image" src="https://www.handcramp.lol/assets/icons/scissors.svg">
+          </section>
+          <section class="player">
+            <img id="computer-image" src="https://www.handcramp.lol/assets/icons/rock.svg">
+          </section>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="match-info">
+          <p id="round-info">&nbsp;</p>
+          <div id="winner">&nbsp;</div>
+        </div>
+      </div>
+  
+      <div class="container">
+        <div class="button-container">
+          <button class="control" onclick="onButtonClick('rock')">
+            <img src="https://www.handcramp.lol/assets/icons/rock.svg">
+          </button>
+          <button class="control" onclick="onButtonClick('paper')">
+            <img src="https://www.handcramp.lol/assets/icons/paper.svg">
+          </button>
+          <button class="control" onclick="onButtonClick('scissors')">
+            <img src="https://www.handcramp.lol/assets/icons/scissors.svg">
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="score-history" class="score-history">
+      
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
